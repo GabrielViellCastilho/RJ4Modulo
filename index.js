@@ -93,9 +93,9 @@ class Empresa{
     }
 
     detalhe =() => {
-        console.log(`Razão Social: ${empresa.razaoSocial}\nNome Fantasia: ${empresa.nomeFantasia}\n---------------------------------`);
+        console.log(`Razão Social: ${this.razaoSocial}\nNome Fantasia: ${this.nomeFantasia}\n---------------------------------`);
     
-        empresa.clientes.forEach((cliente) => {
+        this.clientes.forEach((cliente) => {
             console.log(`\nNome: ${cliente.nome}\nEstado: ${cliente.endereco.estado} Cidade: ${cliente.endereco.cidade} Rua: ${cliente.endereco.rua} Número: ${cliente.endereco.numero}`);
             
             cliente.telefones.forEach((telefone) => {
@@ -106,4 +106,4 @@ class Empresa{
     
 }
 
-export {Cliente,Telefone,Endereco,Empresa}
+export { Endereco, Empresa, Cliente, Telefone};
